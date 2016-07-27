@@ -45,6 +45,7 @@ body {
 /********************** progress-bar *******************/
 
 .progress-bar-container {
+    display: none;
     padding-top: 20px;
     width: 400px;
     margin: 0 auto;

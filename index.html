@@ -8,12 +8,12 @@
     <link type="text/css" href="assets/stylesheets/reset.css" rel="stylesheet">
     <link type="text/css" href="assets/stylesheets/col-15.css" rel="stylesheet">
     <link type="text/css" href="assets/stylesheets/fonts.css" rel="stylesheet">
-    <!--<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>-->
     <link type="text/css" href="assets/stylesheets/main.css" rel="stylesheet">
     <link type="text/css" href="assets/stylesheets/media.css" rel="stylesheet">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" defer></script>
+    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" defer></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" defer></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous" defer></script>
+    <!--<script type="text/template" id="page01" src="assets/templates/page01.html"></script>-->
     <script src="assets/javascripts/main.js" defer></script>
 </head>
 <body>
@@ -57,7 +57,7 @@
         </div>
         <img src="assets/images/logo-exosource.png" alt="logo">
     </div>
-    <div class="progress-bar-container">
+    <div class="progress-bar-container" id="js-progress-bar-container">
         <div class="progress-question"><p>Question 6/9</p></div>
         <div class="progress-nav">
             <div class="progress-nav-previous">
@@ -71,58 +71,7 @@
             </div>
         </div>
     </div>
-    <div class="main-section">
-
-        <!--<div class="text-section"><h1 class="text-colored">Slogan court et punché</h1></div>
-        <div class="text-section"><h1 class="text-white">d’introduction</h1></div>
-        <div class="text-section">
-            <p>Grâce à ce court questionnaire (5 à 10 minutes de votre temps, promis), vous obtiendrez un rapport détaillé des améliorations possibles pour votre entreprise.</p>
-        </div>
-        <div class="text-section">
-            <div class="button-start-wrapper">
-                <div class="button-start-color-bg">
-                    <div class="button-start">
-                        <h3>COMMENCER</h3>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-
-        <div class="text-section"><h2 class="text-colored">Section 1: La sécurité</h2></div>
-        <div class="text-section">
-            <p>Capacité de l’entreprise à se protéger contre différentes menaces (virus, fraude, piratage) et à contrôler l’accès aux informations privilégiées.</p>
-        </div>
-        <div class="horizontal-line"></div>
-        <div class="text-section">
-            <p class="text-secondary text-colored">Indiquez le degré d’importance de cet énoncé pour votre entreprise:</p>
-        </div>
-        <div class="text-section">
-            <p class="text-question text-white"><span class="text-colored">Question 1.1</span> L'entreprise ou ses clients sont soumis à des règlementations particulières 
-                (Ex: Services Financiers, Industrie Pharmaceutique, Secteur public)</p>
-        </div>
-        <div class="text-section vote-section">
-            <div class="col-sm-15">
-                <!--<img src="assets/images/rating-colored.svg" width="100" alt="rating">-->
-                <svg><use xlink:href="#rate" width="150"></use></svg>
-            </div>
-            <div class="col-sm-15">
-                <svg><use xlink:href="#rate" width="150"></use></svg>
-            </div>
-            <div class="col-sm-15">
-                <svg><use xlink:href="#rate" width="150"></use></svg>
-            </div>
-            <div class="col-sm-15">
-                <svg><use xlink:href="#rate" width="150"></use></svg>
-            </div>
-            <div class="col-sm-15">
-                <svg><use xlink:href="#rate" width="150"></use></svg>
-            </div>
-        </div>
-
-
-
-
-    </div>
+    <div id="main-section" class="main-section"></div>
     <div class="progress-meter">
         <div class="progress-meter-top-section">
             <div class="top-line">
