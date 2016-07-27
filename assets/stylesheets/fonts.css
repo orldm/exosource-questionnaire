@@ -1,0 +1,14 @@
+@font-face {
+  font-family: SourceSans-Regular;
+  src: url(/assets/fonts/SourceSansPro-Regular.woff);
+}
+
+@font-face {
+  font-family: SourceSans-Bold;
+  src: url(/assets/fonts/SourceSansPro-Bold.woff);
+}
+
+@font-face {
+  font-family: Oswald-Regular;
+  src: url(/assets/fonts/Oswald-Regular.woff);
+}
