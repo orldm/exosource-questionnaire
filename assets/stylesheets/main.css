@@ -299,8 +299,6 @@ svg:hover {
 /******************* end-progress-meter ******************/
 
 .es-footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     height: 45px;
     background-color: #ADADAD;
