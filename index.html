@@ -9,7 +9,7 @@
     <link type="text/css" href="assets/stylesheets/col-15.css" rel="stylesheet">
     <link type="text/css" href="assets/stylesheets/fonts.css" rel="stylesheet">
     <link type="text/css" href="assets/stylesheets/main.css" rel="stylesheet">
-    <link type="text/css" href="assets/stylesheets/media.css" rel="stylesheet">
+    <!--<link type="text/css" href="assets/stylesheets/media.css" rel="stylesheet">-->
     <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" defer></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" defer></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous" defer></script>
@@ -318,7 +318,7 @@
             </div>
             <div class="button-start-wrapper button-report-wrapper">
                 <div class="button-start-color-bg button-report-color-bg">
-                    <div class="button-report text-center">
+                    <div class="button-report text-center" data-toggle="modal" data-target="#myModal">
                         <h3>RAPPORT COMPLET &nbsp;&nbsp;</h3>
                         <span><img src="assets/images/printer.svg" alt="print" width="20"></span>
                     </div>
@@ -420,6 +420,111 @@
     <div class="es-footer navbar-fixed-bottom">
         <p class="text-center">4000 Saint-Ambroise, Suite 388, Montréal (Qc), 4C 2C7 | (514) 787.0693 | <a href="mailto:info@exosource.com">info@exosource.com</a></p>
     </div>
+
+<!--------------------------------- modal popup --------------------------------->
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <!--<div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>-->
+                <div class="modal-body">
+                    <div class="img-container">
+                        <img src="assets/images/image-popup.jpg" alt="report pdf">
+                    </div>
+                    <div class="form-container">
+                        <form role="form">
+                            <h3>RECEVEZ VOTRE RAPPORT PAR EMAIL</h3>
+                            <div class="form-group">
+                                <div class="name-input right-padding">
+                                    <label for="name">Nom</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                                <div class="name-input left-padding">
+                                    <label for="surname">Prenom</label>
+                                    <input type="text" class="form-control" id="surname">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Addresse courriel</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div>
+                                <label for="number-of-empl">Nb d'employes dans votre enterprise</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" class="form-control" aria-label="..." placeholder="Selectionnez une reponse..." id="number-of-empl">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-down"></span></button>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="activity">Votre secteur d'activite</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" class="form-control" aria-label="..." placeholder="Selectionnez une reponse..." id="activity">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-down"></span></button>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!--<div class="form-group">
+                                <label for="pwd">Password:</label>
+                                <input type="password" class="form-control" id="pwd">
+                            </div>-->
+
+                            <div>
+                                <label for="radio">Confiez-vous presentement votre parc informatique en partition?</label>
+                            </div>
+                            <div class="radio" id="radio">
+                                <input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" /><label for="radio1" class="css-label radGroup1">Oui</label>
+                                <input type="radio" name="radiog_lite" id="radio2" class="css-checkbox" /><label for="radio2" class="css-label radGroup2">Non</label>
+                                <input type="radio" name="radiog_lite" id="radio3" class="css-checkbox" /><label for="radio3" class="css-label radGroup3">Je ne sais pas</label>
+                                
+                                <!--<label class="radio-inline css-label"><input type="radio" name="optradio" class="css-checkbox">Oui</label>
+                                <label class="radio-inline css-label"><input type="radio" name="optradio" class="css-checkbox">Non</label>
+                                <label class="radio-inline css-label"><input type="radio" name="optradio" class="css-checkbox">Je ne sais pas</label>-->
+                            </div>
+                            
+                            <div class="text-center">
+                                <div class="button-receive-wrapper">
+                                    <div class="button-receive-color-bg">
+                                        <div class="button-receive text-center">
+                                            <h3>RECEVOIR MON RAPPORT</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<button type="submit" class="btn btn-default">Submit</button>-->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--<div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>-->
+            </div>
+
+        </div>
+    </div>
+
 
 </body>
 </html>

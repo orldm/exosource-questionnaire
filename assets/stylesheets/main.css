@@ -504,3 +504,134 @@ svg {
     right: 20px;
     top: 17px;
 }
+
+/**************** modal **********************/
+
+.modal-content {
+    border-radius: 0;
+}
+.modal-body {
+    padding: 0;
+    /*sheight: 584px;*/
+}
+.img-container {
+    width: 484px;
+    height: 584px;
+    float: left;
+}
+.form-container {
+    padding: 30px;
+    background-color: white;
+    width: calc(100% - 484px);
+    height: 584px;
+    float: left;
+}
+
+.form-container h3 {
+    font-family: Oswald-Regular;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.form-container label, .input-group {
+    font-family: SourceSans-Regular;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 0.8rem;
+    color: #727272;
+}
+
+.input-group {
+    padding-top: 0;
+}
+
+.radio {
+    margin-top: 0;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.name-input {
+    width: 50%;
+    float: left;
+}
+
+.left-padding {
+    padding-left: 5px;
+}
+
+.right-padding {
+    padding-right: 5px;
+}
+
+.glyphicon-menu-down {
+    top: 3px;
+    color: #727272;
+}
+
+.button-receive-wrapper {
+    position: relative;
+    width: 160px;
+    height: 40px;
+    margin: auto;
+}
+
+.button-receive-color-bg {
+    position: absolute;
+    width: 160px;
+    height: 40px;
+    top: 5px;
+    background-color: #98D82A;
+    border-radius: 15px;
+}
+
+.button-receive {
+    position: absolute;
+    width: 160px;
+    height: 40px;
+    top: -5px;
+    background-color: #313131;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button-receive h3 {
+    padding-top: 15px;
+    font-family: Oswald-Regular;
+    font-size: 0.8rem;
+    color: white;
+}
+
+input[type=radio].css-checkbox {
+							position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+						}
+
+						input[type=radio].css-checkbox + label.css-label {
+							padding-left:37px;
+                            padding-top: 0;
+							height:28px; 
+							display:inline-block;
+							line-height:28px;
+							background-repeat:no-repeat;
+							background-position: 0 0;
+							font-size:0.8rem;
+							vertical-align:middle;
+							cursor:pointer;
+
+						}
+
+						input[type=radio].css-checkbox:checked + label.css-label {
+							background-position: 0 -28px;
+						}
+						label.css-label {
+				background-image:url(/assets/images/css-checkbox.png);
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
