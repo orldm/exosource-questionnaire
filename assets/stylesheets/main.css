@@ -82,13 +82,16 @@ body {
     margin-top: -4px;
 }
 
-.progress-nav-previous, .progress-nav-next p {
+.progress-nav-previous p, .progress-nav-next p {
     padding-top: 2px;
-    color: #A8A8A9;
+    color: #A8A8A9 !important;
     text-align: center;
     text-transform: uppercase;
     font-family: Oswald-Regular;
     font-size: 0.8rem;
+}
+.progress-nav-previous a, .progress-nav-next a {
+    color: #A8A8A9 !important;
 }
 .progress-bar-background {
     width: 216px;
@@ -242,6 +245,24 @@ svg {
 .button-choose:focus {
     background-color: #98D82A;
     color: #4D4D4F;
+}
+
+.error-section {
+    width: 100%;
+    padding: 8px;
+    float: left;
+    text-align: center;
+    transform: scale(0,1);
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.error-section p {
+    font-size: 1rem;
+    color: #F86363;
+}
+.error-section .horizontal-line {
+    border-bottom: 1px solid #F86363;
 }
 
 

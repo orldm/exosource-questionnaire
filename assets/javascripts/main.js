@@ -8,6 +8,10 @@ $(document).ready(function() {
         $('#page00').addClass('display-none');
         $('#page01').fadeIn('slow');
     });
+    $('#link-next').click(function(e) {
+        var pageNumber = $(this).attr('page-number');
+        $('#error-section-'+pageNumber).css('transform', 'scale(1,1)').css('opacity', '1');
+    });
     $('.button-report').mousedown(function(e) {
         $(this).css('top', '0');
     });
@@ -21,6 +25,7 @@ $(document).ready(function() {
         $(this).find('svg').css('fill', '#98D82A');
         var currentPageId = '#' + $(this).parents('.main-section').attr('id');
         var nextPageNumber = parseInt($(this).parents('.main-section').attr('id').slice(-1), 10) + 1;
+        $('#link-next').attr('page-number', nextPageNumber);
         $(currentPageId).fadeOut(function(){
             $('#page0'+ nextPageNumber).fadeIn('slow');
         });
@@ -37,6 +42,7 @@ $(document).ready(function() {
     $('.button-choose').click(function(e) {
         var currentPageId = '#' + $(this).parents('.main-section').attr('id');
         var nextPageNumber = parseInt($(this).parents('.main-section').attr('id').slice(-1), 10) + 1;
+        $('#link-next').attr('page-number', nextPageNumber);
         if (nextPageNumber <= 5) {
             $(currentPageId).fadeOut(function(){
                 $('#page0'+ nextPageNumber).fadeIn('slow');
