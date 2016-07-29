@@ -118,12 +118,16 @@ h2 {
     font-family: Oswald-Regular;
     font-size: 2.6rem;
 }
+/*.main-section-wrapper {
+    display: flex;
+    align-items: center;
+}*/
 .main-section {
     width: 50%;
-    height: 40%;
+    height: 100%;
     margin: auto;
     position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
+    top: 50%; left: 0; bottom: 0; right: 0;
 }
 .main-section p {
     font-family: SourceSans-Regular;
@@ -353,6 +357,10 @@ svg {
 .es-footer a {
     color: #313131;
     text-decoration: underline;
+}
+
+#page06 {
+    top: 0;
 }
 
 /**************** loading animation **********************/

@@ -4,9 +4,9 @@ $(document).ready(function() {
     });
     $('.button-start').mouseup(function(e) {
         $(this).css('top', '-5px').css('background-color', '#EEEEEE');
-        $('#js-progress-bar-container').css('display', 'block');
+        $('#js-progress-bar-container').fadeIn('slow');
         $('#page00').addClass('display-none');
-        $('#page01').removeClass('display-none');
+        $('#page01').fadeIn('slow');
     });
     $('.button-report').mousedown(function(e) {
         $(this).css('top', '0');
@@ -21,9 +21,15 @@ $(document).ready(function() {
         $(this).find('svg').css('fill', '#98D82A');
         var currentPageId = '#' + $(this).parents('.main-section').attr('id');
         var nextPageNumber = parseInt($(this).parents('.main-section').attr('id').slice(-1), 10) + 1;
+        $(currentPageId).fadeOut(function(){
+            $('#page0'+ nextPageNumber).fadeIn('slow');
+        });
+        
+        $('.progress-question p').html('<p>Question ' + nextPageNumber + '/5</p>');
+        $('.progress-bar-main').css('width', (nextPageNumber*20) + '%');
         setTimeout(function() {
-            $(currentPageId).addClass('display-none');
-            $('#page0'+ nextPageNumber).removeClass('display-none');
+            // $(currentPageId).fadeOut();
+            // $('#page0'+ nextPageNumber).fadeIn('slow');
             $('.progress-question p').html('<p>Question ' + nextPageNumber + '/5</p>');
             $('.progress-bar-main').css('width', (nextPageNumber*20) + '%');
         }, 500);
@@ -32,9 +38,12 @@ $(document).ready(function() {
         var currentPageId = '#' + $(this).parents('.main-section').attr('id');
         var nextPageNumber = parseInt($(this).parents('.main-section').attr('id').slice(-1), 10) + 1;
         if (nextPageNumber <= 5) {
+            $(currentPageId).fadeOut(function(){
+                $('#page0'+ nextPageNumber).fadeIn('slow');
+            });
             setTimeout(function() {
-                $(currentPageId).addClass('display-none');
-                $('#page0'+ nextPageNumber).removeClass('display-none');
+                // $(currentPageId).addClass('display-none');
+                // $('#page0'+ nextPageNumber).removeClass('display-none');
                 $('.progress-question p').html('<p>Question ' + nextPageNumber + '/5</p>');
                 $('.progress-bar-main').css('width', (nextPageNumber*20) + '%');
             }, 500);
