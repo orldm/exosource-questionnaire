@@ -96,7 +96,7 @@ body {
     border-radius: 6px;
 }
 .progress-bar-main {
-    width: 100px;
+    width: 20%;
     height: 100%;
     float: left;
     background: linear-gradient(to right, white , #98D82A);
@@ -353,4 +353,76 @@ svg {
 .es-footer a {
     color: #313131;
     text-decoration: underline;
+}
+
+/**************** loading animation **********************/
+
+#loading{
+	background-color: #59631e;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	margin-top: 0px;
+	top: 0px;
+}
+#loading-center{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	}
+#loading-center-absolute {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 100px;
+	width: 50px;
+	margin-top: -50px;
+	margin-left: -25px;
+}
+.object{
+	width: 50px;
+	height: 8px;
+	margin-bottom:15px;
+	background-color: #FFF;
+	-webkit-animation: animate 0.8s infinite;
+	animation: animate 0.8s infinite;
+	}
+#object_two { 
+	-webkit-animation-delay: 0.2s; 
+    animation-delay: 0.2s;
+	}
+#object_four {	
+	-webkit-animation-delay: 0.2s; 
+    animation-delay: 0.2s; 
+	}
+@-webkit-keyframes animate {
+ 
+  50% {
+	-ms-transform: translate(50%,0); 
+   	-webkit-transform: translate(50%,0); 
+    transform: translate(50%,0); 
+	  }
+}
+
+@keyframes animate {
+  50% {
+	-ms-transform: translate(50%,0); 
+   	-webkit-transform: translate(50%,0); 
+    transform: translate(50%,0); 
+	  }
+}
+
+/**************** report **********************/
+
+#report-container {
+    position: fixed;
+    top: 100vh;
+    /*top: 68px;*/
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#report-container img {
+    height: 95vh;
 }

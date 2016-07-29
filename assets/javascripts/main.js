@@ -13,12 +13,34 @@ $(document).ready(function() {
         $(this).prevAll().find('svg').css('fill', '#98D82A');
         $(this).find('span').css('color', '#98D82A');
         $(this).find('svg').css('fill', '#98D82A');
-        var currentPage = '#' + $(this).parents('.main-section').attr('id');
-        var nextPage = '#page0' + (parseInt($(this).parents('.main-section').attr('id').slice(-1), 10) + 1);
+        var currentPageId = '#' + $(this).parents('.main-section').attr('id');
+        var nextPageNumber = parseInt($(this).parents('.main-section').attr('id').slice(-1), 10) + 1;
         setTimeout(function() {
-            console.log(currentPage, nextPage);
-            $(currentPage).addClass('display-none');
-            $(nextPage).removeClass('display-none');
+            $(currentPageId).addClass('display-none');
+            $('#page0'+ nextPageNumber).removeClass('display-none');
+            $('.progress-question p').html('<p>Question ' + nextPageNumber + '/5</p>');
+            $('.progress-bar-main').css('width', (nextPageNumber*20) + '%');
         }, 500);
+    });
+    $('.button-choose').click(function(e) {
+        var currentPageId = '#' + $(this).parents('.main-section').attr('id');
+        var nextPageNumber = parseInt($(this).parents('.main-section').attr('id').slice(-1), 10) + 1;
+        if (nextPageNumber <= 5) {
+            setTimeout(function() {
+                $(currentPageId).addClass('display-none');
+                $('#page0'+ nextPageNumber).removeClass('display-none');
+                $('.progress-question p').html('<p>Question ' + nextPageNumber + '/5</p>');
+                $('.progress-bar-main').css('width', (nextPageNumber*20) + '%');
+            }, 500);
+        } else {
+            $(currentPageId + ', #js-progress-bar-container').fadeOut('slow', function() {
+                $('#page06').removeClass('display-none');
+                setTimeout(function() {
+                    $("#report-container").animate({
+                        top: '68px'
+                    }, 1000);
+                }, 1000);
+            });
+        }
     });
 });
