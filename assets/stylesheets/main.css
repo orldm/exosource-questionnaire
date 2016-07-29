@@ -1,6 +1,9 @@
 .hidden {
     visibility: hidden;
 }
+.display-none {
+    display: none;
+}
 .no-padding {
     padding: 0;
 }
@@ -117,7 +120,7 @@ h2 {
 }
 .main-section {
     width: 50%;
-    height: 30%;
+    height: 40%;
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
@@ -147,6 +150,9 @@ h2 {
 .text-white {
     color: white !important;
 }
+.text-gray {
+    color: #5D5D5D !important;
+}
 .text-section {
     width: 100%;
     padding: 8px;
@@ -155,15 +161,28 @@ h2 {
 }
 .vote-section {
     width: 110%;
-    margin: 20px -20px;
+    margin: 0 -20px;
     padding: 20px 0;
+}
+.vote-section span {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    color: #A8A8A9;
+    font-family: SourceSans-Regular;
+    font-size: 1.1rem;
 }
 svg {
     fill: #A8A8A9;
 }
-svg:hover {
+.vote-item:hover svg {
     fill: #98D82A;
 }
+
+.vote-item:hover span {
+    color: #98D82A;
+}
+
 .button-start-wrapper {
     position: relative;
     width: 200px;
@@ -195,6 +214,24 @@ svg:hover {
     font-family: Oswald-Regular;
     font-size: 1rem;
     color: #313131;
+}
+
+.button-choose {
+    width: 100%;
+    padding: 20px;
+    font-family: Oswald-Bold;
+    font-size: 0.9rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+}
+.button-choose:hover {
+    background-color: #4D4D4F;
+}
+.button-choose:focus {
+    background-color: #98D82A;
+    color: #4D4D4F;
 }
 
 
