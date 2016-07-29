@@ -106,6 +106,7 @@ body {
     float: left;
     background: linear-gradient(to right, white , #98D82A);
     border-radius: 6px;
+    transition: width .4s ease-in-out;
 }
 
 /******************* end-progress-bar ******************/
