@@ -25,12 +25,12 @@ $(document).ready(function() {
             $('#page0'+ nextPageNumber).fadeIn('slow');
         });
         
-        $('.progress-question p').html('<p>Question ' + nextPageNumber + '/5</p>');
+        $('.progress-question p').html('Question ' + nextPageNumber + '/5');
         $('.progress-bar-main').css('width', (nextPageNumber*20) + '%');
         setTimeout(function() {
             // $(currentPageId).fadeOut();
             // $('#page0'+ nextPageNumber).fadeIn('slow');
-            $('.progress-question p').html('<p>Question ' + nextPageNumber + '/5</p>');
+            $('.progress-question p').html('Question ' + nextPageNumber + '/5');
             $('.progress-bar-main').css('width', (nextPageNumber*20) + '%');
         }, 500);
     });
@@ -44,7 +44,7 @@ $(document).ready(function() {
             setTimeout(function() {
                 // $(currentPageId).addClass('display-none');
                 // $('#page0'+ nextPageNumber).removeClass('display-none');
-                $('.progress-question p').html('<p>Question ' + nextPageNumber + '/5</p>');
+                $('.progress-question p').html('Question ' + nextPageNumber + '/5');
                 $('.progress-bar-main').css('width', (nextPageNumber*20) + '%');
             }, 500);
         } else {

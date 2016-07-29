@@ -51,10 +51,12 @@ body {
     display: none;
     padding-top: 20px;
     width: 400px;
+    height: 34px;
     margin: 0 auto;
 }
 .progress-question {
     width: 100%;
+    height: 34px;
 }
 .progress-question p {
     padding: 10px;
@@ -118,16 +120,20 @@ h2 {
     font-family: Oswald-Regular;
     font-size: 2.6rem;
 }
-/*.main-section-wrapper {
+.main-section-wrapper {
+    width: 100%;
+    height: 70vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-}*/
+}
 .main-section {
     width: 50%;
-    height: 100%;
-    margin: auto;
-    position: absolute;
-    top: 50%; left: 0; bottom: 0; right: 0;
+    /*height: 100%;*/
+    /*margin: auto;*/
+    /*position: absolute;*/
+    /*top: 50%; left: 0; bottom: 0; right: 0;*/
 }
 .main-section p {
     font-family: SourceSans-Regular;
