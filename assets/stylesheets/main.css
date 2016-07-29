@@ -426,3 +426,45 @@ svg {
 #report-container img {
     height: 95vh;
 }
+
+.button-report-wrapper {
+    height: 50px;
+    position: fixed;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.button-report-color-bg {
+    /*position: absolute;
+    width: 200px;*/
+    height: 50px;
+    top: 5px;
+    /*background-color: #98D82A;
+    border-radius: 20px;*/
+}
+
+.button-report {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    top: -5px;
+    color: white;
+    background-color: #313131;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button-report h3 {
+    padding-top: 18px;
+    font-family: Oswald-Regular;
+    font-size: 1rem;
+    color: white;
+}
+
+.button-report span {
+    position: absolute;
+    right: 20px;
+    top: 17px;
+}

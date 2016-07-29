@@ -8,6 +8,12 @@ $(document).ready(function() {
         $('#page00').addClass('display-none');
         $('#page01').removeClass('display-none');
     });
+    $('.button-report').mousedown(function(e) {
+        $(this).css('top', '0');
+    });
+    $('.button-report').mouseup(function(e) {
+        $(this).css('top', '-5px');
+    });
     $('.vote-item').click(function(e) {
         $(this).siblings().find('span').addClass('hidden');
         $(this).prevAll().find('svg').css('fill', '#98D82A');
@@ -38,7 +44,9 @@ $(document).ready(function() {
                 setTimeout(function() {
                     $("#report-container").animate({
                         top: '68px'
-                    }, 1000);
+                    }, 1000, function () {
+                        $('.button-report-wrapper').fadeIn('slow');
+                    });
                 }, 1000);
             });
         }
