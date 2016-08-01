@@ -6,7 +6,10 @@ $(document).ready(function() {
         $(this).css('top', '-5px').css('background-color', '#EEEEEE');
         $('#js-progress-bar-container').fadeIn('slow');
         $('#page00').addClass('display-none');
-        $('#page01').fadeIn('slow');
+        $('#page01').removeClass('display-none').animate({
+            opacity: 1,
+            lineHeight: '1.4rem'
+        }, 300);
     });
     $('#link-next').click(function(e) {
         var pageNumber = $(this).attr('page-number');
@@ -27,7 +30,11 @@ $(document).ready(function() {
         var nextPageNumber = parseInt($(this).parents('.main-section').attr('id').slice(-1), 10) + 1;
         $('#link-next').attr('page-number', nextPageNumber);
         $(currentPageId).fadeOut(function(){
-            $('#page0'+ nextPageNumber).fadeIn('slow');
+            // $('#page0'+ nextPageNumber).fadeIn('slow');
+            $('#page0'+ nextPageNumber).removeClass('display-none').animate({
+                opacity: 1,
+                lineHeight: '1.4rem'
+            }, 300);
         });
         
         $('.progress-question p').html('Question ' + nextPageNumber + '/5');
@@ -45,7 +52,10 @@ $(document).ready(function() {
         $('#link-next').attr('page-number', nextPageNumber);
         if (nextPageNumber <= 5) {
             $(currentPageId).fadeOut(function(){
-                $('#page0'+ nextPageNumber).fadeIn('slow');
+                $('#page0'+ nextPageNumber).removeClass('display-none').animate({
+                    opacity: 1,
+                    lineHeight: '1.4rem'
+                }, 300);
             });
             setTimeout(function() {
                 // $(currentPageId).addClass('display-none');
