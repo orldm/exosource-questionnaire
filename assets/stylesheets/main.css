@@ -118,11 +118,12 @@ h1, h2, h3 {
 }
 h1 {
     font-family: Oswald-Regular;
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 h2 {
     font-family: Oswald-Regular;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
 }
 .main-section-wrapper {
     width: 100%;
@@ -154,7 +155,7 @@ h2 {
     padding: 20px;
 }
 .main-section p.text-question {
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: justify;
 }
 .horizontal-line {
@@ -192,6 +193,7 @@ h2 {
     font-size: 1.1rem;
 }
 svg {
+    width: 80px;
     fill: #A8A8A9;
 }
 .vote-item:hover svg {
@@ -237,7 +239,7 @@ svg {
 
 .button-choose {
     width: 100%;
-    padding: 20px;
+    padding: 20px 10px;
     font-family: Oswald-Bold;
     font-size: 0.9rem;
     color: white;
@@ -465,7 +467,7 @@ svg {
 }
 
 #report-container img {
-    height: 95vh;
+    height: 90vmax;
 }
 
 .button-report-wrapper {

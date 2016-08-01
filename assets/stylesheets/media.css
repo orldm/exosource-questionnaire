@@ -40,6 +40,13 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .main-section-wrapper {
+        height: 80vh;
+    }
+
+}
+
 
 @media screen and (max-width: 650px) {
     .img-container {
