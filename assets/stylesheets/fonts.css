@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: SourceSans-Black;
+  src: url(/assets/fonts/SourceSansPro-Black.woff);
+}
+
+@font-face {
   font-family: Oswald-Regular;
   src: url(/assets/fonts/Oswald-Regular.woff);
 }
