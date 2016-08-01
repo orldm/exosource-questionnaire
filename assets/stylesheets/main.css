@@ -517,17 +517,23 @@ svg {
 }
 .modal-body {
     padding: 0;
-    /*sheight: 584px;*/
+    /*height: 584px;*/
 }
+
 .img-container {
+    /*width: 50%;*/
     width: 484px;
     height: 584px;
     float: left;
+}
+.form-group input {
+    font-family: SourceSans-Regular;
 }
 .form-container {
     padding: 30px;
     background-color: white;
     width: calc(100% - 484px);
+    /*width: 50%;*/
     height: 584px;
     float: left;
 }
@@ -608,6 +614,35 @@ svg {
     font-family: Oswald-Regular;
     font-size: 0.8rem;
     color: white;
+}
+
+.required {
+    color: #f96464;
+}
+
+.required-info {
+    color: #f96464;
+    float: right;
+    font-family: SourceSans-Black;
+}
+
+.full-width {
+    width: 100%;
+}
+
+#activity::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #f96464;
+}
+#activity:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #f96464;
+   opacity:  1;
+}
+#activity::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #f96464;
+   opacity:  1;
+}
+#activity:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #f96464;
 }
 
 input[type=radio].css-checkbox {

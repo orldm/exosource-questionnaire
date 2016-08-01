@@ -1,240 +1,62 @@
 @media screen and (max-width: 992px) {
-    h1 {
-        font-size: 2.6rem;
+    img.img-report {
+        width: 340px;
+        height: 410px;
+    } 
+    .img-container {
+        /*width: 50%;*/
+        width: 340px;
+        height: 410px;
+        float: left;
     }
-    .main-title {
-        top: 40%;
-        width: 70%;
+    .form-control {
+        height: 28px;
     }
-    .header-menu {
-        width: 60%;
+
+    .input-group-btn:last-child > .btn{
+        height: 28px;
     }
-    .header-menu a {
-        font-size: 0.7rem;
+
+    .glyphicon-menu-down {
+        top: 0;
     }
-    .photo-container {
-        padding: 30px 20px 0 20px;
-    }
-    .about-container {
-        padding: 20px 40px;
-    }
-    .about-container h2 {
+
+    .form-container {
+            padding: 10px;
+            background-color: white;
+            width: calc(100% - 340px);
+            /*width: 50%;*/
+            height: 410px;
+            float: left;
+        }
+    .form-container h3 {
+        font-size: 0.8rem;
         padding-bottom: 0;
     }
-    .service-bottom-container p {
-        top: 50px;
-        padding: 0 10px;
-        font-size: 0.8rem;
-        line-height: 1.2rem;
+    .form-container label, .input-group {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        font-size: 0.6rem;
     }
 }
 
-@media screen and (min-width: 768px) {
-    .modal-dialog {
-        width: 368px;
-    }
-}
 
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-    .navbar-wrapper {
-        justify-content: flex-end;
-    }
-    .navbar {
-        width: 100%;
-    }
-    .navbar .navbar-collapse {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-    .navbar .navbar-collapse>ul {
-        padding-bottom: 50px;
-    }
-    .navbar-inverse .navbar-nav>li>a {
-        font-weight: 500;
-        letter-spacing: 0.4rem;
-        font-size: 1.5rem;
-    }
-    .nav>li.logo-placeholder {
+@media screen and (max-width: 650px) {
+    .img-container {
         display: none;
     }
-    .header-menu {
-        top: 10px;
-        width: 70%;
-    }
-    .main-title p {
-        padding-top: 20px;
-        font-size: 0.8rem;
-        line-height: 1.2rem;
-    }
-    .service-top-container h2 {
-        padding: 40px 0 20px 0;
-    }
-/**************** our services list rearrange *****************/
-    .our-services-container {
-        height: auto;
-    }
-    .service-top-container {
-        position: static;
-        height: auto;
-        padding-bottom: 30px;
-    }
-    .service-bottom-container {
-        display: inline-block;
-        position: static;
-        height: auto;
-        padding: 15px; 
-    }
-    .service-bottom-container > .col-sm-15 {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        position: static;
-        padding: 10px;
+    .form-container {
         width: 100%;
     }
-    .service-bottom-container > .col-sm-15 > img {
-        position: static;
-        min-width: 89px;
-    }
-    .service-bottom-container > .col-sm-15 > p {
-        vertical-align: middle;
-        position: static;
-        text-align: left;
-    }
-
-/*********************************/
-
-    .feedback-container h2 {
-        padding: 20px 0 10px 0;
-    }
-    .feedback-container button {
-        margin: 20px 0 20px 0;
-        padding: 6px 30px;
-        font-size: 0.9rem;
-    }
-    .container-inner {
-        width: 70%;
-    }
-    .testimonials-container img {
-        padding: 20px 0;
-    }
-    .testimonials-container p {
+    .form-container h3 {
+        font-size: 1rem;
         padding-bottom: 10px;
     }
-    .contacts-container h2 {
-        padding: 20px 0;
-    }
-    .contact-column {
-        padding: 10px 15px;
-    }
-    .details-overlay button {
-        margin: 10px 0;
-        padding: 3px 20px;
-        font-size: 0.6rem;
-    }
-    .details-overlay h3 {
-        font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 2.2rem;
-        line-height: 2.5rem;
-        /*letter-spacing: 0.6rem;*/
-    }
-    h2 {
-        font-size: 1.6rem;
-    }
-    .top-logo {
-        top: 10%;
-    }
-    .header-menu {
-        top: 3px;
-        width: 90%;
-    }
-    .main-title {
-        top: 40%;
-        width: 90%;
-    }
-    .main-title p {
-        padding-top: 20px;
+    .button-receive h3 {
+        padding-top: 15px;
+        font-family: Oswald-Regular;
         font-size: 0.8rem;
-        line-height: 1.2rem;
-    }
-    .carousel-control {
-        display: none;
-    }
-    .carousel-inner>.item>img {
-        height: 120vw;
-        width: auto;
-        max-width: none;
-    }
-    .photo-container {
-        display: none;
-    }
-    .about-container {
-        padding: 20px 10px;
-    }
-    .about-container h2 {
-        text-align: center;
-        padding: 10px;
-    }
-    .details-overlay button {
-        margin: 10px 0;
-        padding: 1px 10px;
-        font-size: 0.6rem;
-    }
-    .details-overlay h3 {
-        font-size: 0.7rem;
-    }
-    .gallery-container .col-sm-15 {
-        width: 100%;
-        height: 60vw;
-        border-top: 3px solid white;
-        border-right: none;
-    }
-    .gallery-container .col-sm-15:first-child {
-        border-top: none;
-    }
-    .gallery-container .col-sm-15 img {
-        margin-top: -30%;
-    }
-    .details-container {
-        order: 0;
-        padding: 0 10px;
-    }
-    span.close-details {
-        top: 5px;
-        right: 5px;
-    }
-    .tab-pane-text {
-        width: 100%;
-    }
-    .tab-pane-pics .col-xs-3 {
-        width: 100%;
-    }
-    .tab-pane-pics img {
-        padding: 20px 0;
-    }
-    .service-bottom-container {
-        padding: 15px 0;
-    }
-    .details-overlay h3 {
-        padding-top: 20%;
-        font-size: 1.9rem;
-        letter-spacing: 0.2rem;
-    }
-    .details-overlay button {
-        margin: 30px 0;
-        padding: 10px 40px;
-        font-size: 1.2rem;
-    }
-    .container-inner {
-        width: 100%;
-        padding: 10px;
+        color: white;
     }
 
 }
