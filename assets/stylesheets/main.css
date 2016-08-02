@@ -284,7 +284,7 @@ svg {
     position: absolute;
     right: 60px;
     top: 100px;
-    height: 80%;
+    height: calc(92% - 112px);
     width: 7px;
 }
 
