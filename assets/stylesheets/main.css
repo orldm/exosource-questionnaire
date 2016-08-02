@@ -122,8 +122,8 @@ h1 {
 }
 h2 {
     font-family: Oswald-Regular;
-    font-size: 2.2rem;
-    line-height: 2.2rem;
+    font-size: 2.1rem;
+    line-height: 2.1rem;
 }
 .main-section-wrapper {
     width: 100%;
@@ -147,12 +147,12 @@ h2 {
 }
 .main-section p {
     font-family: SourceSans-Regular;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #BCBCBC;
 }
 .main-section p.text-secondary {
     font-size: 1rem;
-    padding: 20px;
+    padding: 5px 15px;
 }
 .main-section p.text-question {
     font-size: 1rem;
@@ -181,19 +181,21 @@ h2 {
 }
 .vote-section {
     width: 110%;
+    height: 100px;
     margin: 0 -20px;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 .vote-section span {
     position: absolute;
-    top: 120px;
-    left: 50px;
+    top: 80px;
+    left: 50%;
     color: #A8A8A9;
     font-family: SourceSans-Regular;
     font-size: 1.1rem;
 }
 svg {
     width: 80px;
+    height: 80px;
     fill: #A8A8A9;
 }
 .vote-item:hover svg {
