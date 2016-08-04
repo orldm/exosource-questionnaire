@@ -59,7 +59,7 @@
         <div class="progress-question"><p>Question 1/5</p></div>
         <div class="progress-nav">
             <div class="progress-nav-previous">
-                <a href="#"><img src="assets/images/back.svg" width="22" alt="previous"><p>Précédent</p></a>
+                <a href="#" id='link-previous' page-number="1"><img src="assets/images/back.svg" width="22" alt="previous"><p>Précédent</p></a>
             </div>
             <div class="progress-bar-background">
                 <div class="progress-bar-main"></div>
@@ -74,7 +74,7 @@
 
         <!---------------------------page00--------------------------->
 
-        <div id="page00" class="main-section">
+        <div id="p0" class="main-section">
             <div class="text-section">
                 <h1 class="text-colored">Slogan court et punché</h1>
             </div>
@@ -98,7 +98,7 @@
 
         <!---------------------------page01--------------------------->
 
-        <div id="page01" class="main-section display-none">
+        <div id="p1" class="main-section display-none">
             <div class="text-section">
                 <h2 class="text-colored">Section 1: La sécurité</h2>
             </div>
@@ -154,7 +154,7 @@
 
         <!---------------------------page02--------------------------->
 
-        <div id="page02" class="main-section display-none">
+        <div id="p2" class="main-section display-none">
             <div class="text-section">
                 <h2 class="text-gray">La sécurité</h2>
             </div>
@@ -206,7 +206,7 @@
 
         <!---------------------------page03--------------------------->
 
-        <div id="page03" class="main-section display-none">
+        <div id="p3" class="main-section display-none">
             <div class="text-section">
                 <h2 class="text-gray">La sécurité</h2>
             </div>
@@ -238,7 +238,7 @@
 
         <!---------------------------page04--------------------------->
 
-        <div id="page04" class="main-section display-none">
+        <div id="p4" class="main-section display-none">
             <div class="text-section">
                 <h2 class="text-gray">Mobilité</h2>
             </div>
@@ -270,7 +270,7 @@
 
         <!---------------------------page05--------------------------->
 
-        <div id="page05" class="main-section display-none">
+        <div id="p5" class="main-section display-none">
             <div class="text-section">
                 <h2 class="text-gray">Gestion et administration</h2>
             </div>
@@ -302,7 +302,7 @@
 
         <!---------------------------page06--------------------------->
 
-        <div id="page06" class="main-section display-none">
+        <div id="p6" class="main-section display-none">
             <div id="loading-center">
                 <div id="loading-center-absolute">
                     <div class="object" id="object_one"></div>
@@ -336,12 +336,14 @@
         <div class="progress-meter-section">
             <div class="left-line">
                 <div class="progress-label">
-                    <p class="step-complete">Sécurité</p>
+                    <p class="step-complete" id="n1">Sécurité</p>
+                    <img class="icon-active display-none" src="assets/images/icon-active.png" alt="current step">
                 </div>
             </div>
             <div class="right-line">
                 <div class="progress-label progress-label-number">
                     <p class="step-complete check-symbol">&#10004;</p>
+                    <p class="display-none step-number">1</p>
                 </div>
             </div>
         </div>
@@ -349,11 +351,13 @@
             <div class="left-line">
                 <div class="progress-label label-two-line">
                     <p class="step-complete">Disponibilité et continuité</p>
+                    <img class="display-none" src="assets/images/icon-active.png" alt="current step">
                 </div>
             </div>
             <div class="right-line">
                 <div class="progress-label progress-label-number">
                     <p class="step-complete check-symbol">&#10004;</p>
+                    <p class="display-none step-number">2</p>
                 </div>
             </div>
         </div>
@@ -366,7 +370,7 @@
             </div>
             <div class="right-line">
                 <div class="progress-label progress-label-number">
-                    <p class="step-current">3</p>
+                    <p class="step-current step-number">3</p>
                 </div>
             </div>
         </div>
@@ -374,6 +378,7 @@
             <div class="left-line">
                 <div class="progress-label">
                     <p>Collaboration</p>
+                    <img class="display-none" src="assets/images/icon-active.png" alt="current step">
                 </div>
             </div>
             <div class="right-line">
@@ -386,11 +391,12 @@
             <div class="left-line">
                 <div class="progress-label label-two-line">
                     <p>Productivité individuelle</p>
+                    <img class="display-none" src="assets/images/icon-active.png" alt="current step">
                 </div>
             </div>
             <div class="right-line">
                 <div class="progress-label progress-label-number">
-                    <p>5</p>
+                    <p class="step-number">5</p>
                 </div>
             </div>
         </div>
@@ -398,6 +404,7 @@
             <div class="left-line">
                 <div class="progress-label label-two-line">
                     <p>Gestion et administration</p>
+                    <img class="display-none" src="assets/images/icon-active.png" alt="current step">
                 </div>
             </div>
             <div class="right-line">
@@ -410,6 +417,7 @@
             <div class="left-line">
                 <div class="progress-label label-two-line">
                     <p  class="start-finish-label">Votre <br>rapport final</p>
+                    <img class="display-none" src="assets/images/icon-active.png" alt="current step">
                 </div>
             </div>
             <div class="right-line"></div>

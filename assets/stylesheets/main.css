@@ -93,6 +93,16 @@ body {
 .progress-nav-previous a, .progress-nav-next a {
     color: #A8A8A9 !important;
 }
+#link-previous {
+    pointer-events: none;
+    cursor: default;
+}
+#link-previous p, #link-previous img{
+    opacity: 0;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+}
 .progress-bar-background {
     width: 216px;
     height: 14px;
@@ -140,7 +150,7 @@ h2 {
     /*position: absolute;*/
     /*top: 50%; left: 0; bottom: 0; right: 0;*/
 }
-#page01, #page02, #page03, #page04, #page05 {
+#p1, #p2, #p3, #p4, #p5 {
     line-height: 2rem;
     opacity: 0;
     /*transition: all .5s ease-in-out;*/
@@ -199,11 +209,11 @@ svg {
     fill: #A8A8A9;
 }
 .vote-item:hover svg {
-    fill: #98D82A;
+    fill: #98D82A !important;
 }
 
 .vote-item:hover span {
-    color: #98D82A;
+    color: #98D82A !important;
 }
 
 .button-start-wrapper {
@@ -265,6 +275,11 @@ svg {
     transform: scale(0,1);
     opacity: 0;
     transition: all .2s ease-in-out;
+}
+
+.error-section-open {
+    opacity: 1;
+    transform: scale(1,1);
 }
 
 .error-section p {
@@ -335,6 +350,10 @@ svg {
     top: 88%;
 }
 
+.label-two-line img {
+    top: 5px !important;
+}
+
 .progress-label p {
     color: #727272;
     font-family: SourceSans-Regular;
@@ -349,10 +368,12 @@ svg {
 
 .progress-label p.step-complete {
     color: white;
+    cursor: pointer;
 }
 
 .progress-label p.step-complete.check-symbol {
     font-size: 1.2rem;
+    cursor: default;
 }
 
 .progress-label p.step-current {
