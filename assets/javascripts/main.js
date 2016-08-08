@@ -9,7 +9,7 @@ $(document).ready(function() {
         $('#p1').removeClass('display-none').animate({
             opacity: 1,
             lineHeight: '1.4rem'
-        }, 300);
+        }, 300, gotoSection(1));
     });
     $('#link-next').click(function(e) {
         var pageNumber = $(this).attr('page-number');
@@ -66,10 +66,16 @@ $(document).ready(function() {
                 opacity: 0
                 }, 300, function(){
                     $(currentPageId).addClass('display-none').css('line-height', '2rem');
-                    $('#p'+ nextPageNumber).removeClass('display-none').animate({
+                    // console.log(nextPageNumber);
+                    var $nextPage = $('#p'+ nextPageNumber);
+                    $nextPage.removeClass('display-none').animate({
                         opacity: 1,
                         lineHeight: '1.4rem'
-                    }, 300);
+                    }, 300, function() {
+                        if ($nextPage.hasClass('section-page')) {
+                            gotoSection(nextPageNumber);
+                        }
+                    });
                 });
             setTimeout(function() {
                 $('.progress-question p').html('Question ' + nextPageNumber + '/63');
@@ -77,6 +83,7 @@ $(document).ready(function() {
             }, 500);
         } else {
             $(currentPageId + ', #js-progress-bar-container').fadeOut('slow', function() {
+                gotoFinal();
                 $('#p64').removeClass('display-none');
                 setTimeout(function() {
                     $("#report-container").animate({
@@ -118,8 +125,27 @@ $(document).ready(function() {
 
         });
     });
+    function gotoSection(sectionNumber) {
+        var $sectionId = $("#n"+sectionNumber);
+        $sectionId.addClass('step-current');
+        $sectionId.closest('.progress-meter-section').find('.step-number').addClass('step-current');
+        // $sectionId.closest('.progress-meter-section').nextAll().find('.progress-label p.step-number').addClass('step-current');
+        $sectionId.siblings('img').removeClass('display-none').addClass('icon-active');
+        $sectionId.closest('.progress-meter-section').prevAll().find('.progress-label p.step-current').removeClass('step-current').addClass('step-complete');
+        $sectionId.closest('.progress-meter-section').prevAll().find('.progress-label p.check-symbol').removeClass('display-none');
+        $sectionId.closest('.progress-meter-section').prevAll().find('.progress-label img').addClass('display-none');
+        $sectionId.closest('.progress-meter-section').prevAll().find('.progress-label p.step-number').addClass('display-none');
+    };
+    function gotoFinal() {
+        var $finalSectionPrevAll = $('#final-section').prevAll();
+        $finalSectionPrevAll.find('.progress-label p.step-current').removeClass('step-current').addClass('step-complete');
+        $finalSectionPrevAll.find('.progress-label p.check-symbol').removeClass('display-none');
+        $finalSectionPrevAll.find('.progress-label img').addClass('display-none');
+        $finalSectionPrevAll.find('.progress-label p.step-number').addClass('display-none');
+        $('#final-section').find('img').removeClass('display-none').addClass('icon-active');
+    }
     $('.step-complete').not('.check-symbol').click(function(e) {
-        console.log($(this).attr('id'));    
+        // console.log($(this).attr('id'));    
         $('.step-current').removeClass('step-current');
         $(this).removeClass('step-complete').addClass('step-current').unbind();
         $(this).closest('.progress-meter-section').find('.right-line p').toggleClass('display-none');
