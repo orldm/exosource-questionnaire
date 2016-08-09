@@ -41,15 +41,12 @@ $(document).ready(function() {
             }, 300, function(){
                 $('.vote-item span').removeClass('hidden').css('color', '#A8A8A9');
                 $('.vote-item svg').css('fill', '#A8A8A9');
-                $(currentPageId).addClass('display-none').css('line-height', '2rem');
-                $('#p'+ nextPageNumber).removeClass('display-none').animate({
+                $(currentPageId).addClass('display-none').removeClass('current-page').css('line-height', '2rem');
+                $('#p'+ nextPageNumber).addClass('current-page').removeClass('display-none').animate({
                     opacity: 1,
                     lineHeight: '1.4rem'
                 }, 300);
         });
-        
-        $('.progress-question p').html('Question ' + nextPageNumber + '/63');
-        $('.progress-bar-main').css('width', (nextPageNumber*(100/63)) + '%');
         setTimeout(function() {
             $('.progress-question p').html('Question ' + nextPageNumber + '/63');
             $('.progress-bar-main').css('width', (nextPageNumber*(100/63)) + '%');
@@ -65,10 +62,9 @@ $(document).ready(function() {
             $(currentPageId).animate({
                 opacity: 0
                 }, 300, function(){
-                    $(currentPageId).addClass('display-none').css('line-height', '2rem');
-                    // console.log(nextPageNumber);
+                    $(currentPageId).addClass('display-none').removeClass('current-page').css('line-height', '2rem');
                     var $nextPage = $('#p'+ nextPageNumber);
-                    $nextPage.removeClass('display-none').animate({
+                    $nextPage.removeClass('display-none').addClass('current-page').animate({
                         opacity: 1,
                         lineHeight: '1.4rem'
                     }, 300, function() {
@@ -135,15 +131,64 @@ $(document).ready(function() {
         $sectionId.closest('.progress-meter-section').find('.step-number').addClass('step-current');
         $sectionId.closest('.progress-meter-section').find('.step-number').removeClass('display-none');
         $sectionId.closest('.progress-meter-section').find('.check-symbol').addClass('display-none');
-        // $sectionId.closest('.progress-meter-section').nextAll().find('.progress-label p.step-number').addClass('step-current');
         $('.progress-label img').addClass('display-none');
         $sectionId.siblings('img').removeClass('display-none').addClass('icon-active');
         $sectionId.closest('.progress-meter-section').prevAll().find('.progress-label p.step-current').removeClass('step-current').addClass('step-complete');
         $sectionId.closest('.progress-meter-section').prevAll().find('.progress-label p.check-symbol').removeClass('display-none');
-        // $sectionId.closest('.progress-meter-section').prevAll().find('.progress-label img').addClass('display-none');
         $sectionId.closest('.progress-meter-section').prevAll().find('.progress-label p.step-number').addClass('display-none');
         $sectionId.closest('.progress-meter-section').nextAll().find('.progress-label p').removeClass('step-current');
         $sectionId.closest('.progress-meter-section').nextAll().find('.progress-label p').removeClass('step-complete');
+        $sectionId.closest('.progress-meter-section').nextAll().find('.progress-label p.check-symbol').addClass('display-none');
+        $sectionId.closest('.progress-meter-section').nextAll().find('.progress-label p.step-number').removeClass('display-none');
+        
+
+        $('.step-complete').not('.check-symbol').unbind();
+
+        $('.step-complete').not('.check-symbol').click(function(e) {
+            var currentPageId = '#' + $('.current-page').attr('id');
+            var gotoSectionNumber = $(this).attr('id').slice(1);
+
+            if (gotoSectionNumber - 1 === 0) {
+                $('#link-previous').css('pointer-events', 'none').css('cursor','default');
+                $('#link-previous p, #link-previous img').css('opacity', '0');
+            } else {
+                $('#link-previous').attr('page-number', gotoSectionNumber - 1);
+                $('#link-previous').css('pointer-events', 'auto').css('cursor','pointer');
+                $('#link-previous p, #link-previous img').css('opacity', '1');
+            }
+
+            $('#link-next').attr('page-number', gotoSectionNumber);
+            // $('#link-previous').attr('page-number', gotoSectionNumber );
+            $('.error-section').removeClass('error-section-open');
+
+            $(currentPageId).animate({
+                opacity: 0
+                }, 300, function(){
+                    $(currentPageId).addClass('display-none').removeClass('current-page').css('line-height', '2rem');
+                    $('#p'+ gotoSectionNumber).addClass('current-page').removeClass('display-none').animate({
+                        opacity: 1,
+                        lineHeight: '1.4rem'
+                    }, 300);
+            });
+            setTimeout(function() {
+                $('.progress-question p').html('Question ' + gotoSectionNumber + '/63');
+                $('.progress-bar-main').css('width', (gotoSectionNumber*(100/63)) + '%');
+            }, 500);
+            
+            gotoSection(gotoSectionNumber);
+            
+
+
+            // $('.step-current').removeClass('step-current');
+            // $(this).removeClass('step-complete').addClass('step-current').unbind();
+            // $(this).closest('.progress-meter-section').find('.right-line p').toggleClass('display-none');
+            // $(this).closest('.progress-meter-section').find('.step-number').addClass('step-current');
+            // $('.icon-active').removeClass('icon-active').addClass('display-none');
+            // $(this).siblings('img').removeClass('display-none').addClass('icon-active');
+            // $(this).closest('.progress-meter-section').nextAll().find('.progress-label p.check-symbol').addClass('display-none');
+            // $(this).closest('.progress-meter-section').nextAll().find('.progress-label p.step-number').removeClass('display-none');
+            // $(this).closest('.progress-meter-section').nextAll().find('.progress-label p').removeClass('step-complete').unbind();
+        });
         
     };
     function gotoFinal() {
@@ -154,16 +199,5 @@ $(document).ready(function() {
         $finalSectionPrevAll.find('.progress-label p.step-number').addClass('display-none');
         $('#final-section').find('img').removeClass('display-none').addClass('icon-active');
     }
-    $('.step-complete').not('.check-symbol').click(function(e) {
-        // console.log($(this).attr('id'));    
-        $('.step-current').removeClass('step-current');
-        $(this).removeClass('step-complete').addClass('step-current').unbind();
-        $(this).closest('.progress-meter-section').find('.right-line p').toggleClass('display-none');
-        $(this).closest('.progress-meter-section').find('.step-number').addClass('step-current');
-        $('.icon-active').removeClass('icon-active').addClass('display-none');
-        $(this).siblings('img').removeClass('display-none').addClass('icon-active');
-        $(this).closest('.progress-meter-section').nextAll().find('.progress-label p.check-symbol').addClass('display-none');
-        $(this).closest('.progress-meter-section').nextAll().find('.progress-label p.step-number').removeClass('display-none');
-        $(this).closest('.progress-meter-section').nextAll().find('.progress-label p').removeClass('step-complete').unbind();
-    });
+    
 });
