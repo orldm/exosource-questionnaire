@@ -369,14 +369,24 @@ svg {
     font-family: SourceSans-Bold;
 }
 
+/*.control-class {
+    color: red !important;
+}*/
+
 .progress-label p.step-complete {
     color: white;
     cursor: pointer;
 }
 
-.progress-label p.step-complete.check-symbol {
+/*.progress-label p.step-complete.check-symbol {
     font-size: 1.2rem;
     cursor: default;
+}*/
+
+.check-symbol {
+    color: white !important;
+    font-size: 1.2rem !important;
+    cursor: default !important;
 }
 
 .progress-label p.step-current {

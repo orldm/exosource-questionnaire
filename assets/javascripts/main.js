@@ -98,6 +98,10 @@ $(document).ready(function() {
     $('#link-previous').click(function(e) {
         var previousPageNumber = parseInt($(this).attr('page-number'), 10);
         var currentPageId = '#p' + (previousPageNumber + 1);
+        if ($(currentPageId).hasClass('section-page')) {
+            var prevSectionId = parseInt($(currentPageId).prevAll('.section-page:first').attr('id').slice(1), 10);
+            gotoSection(prevSectionId);
+        }
         $(currentPageId).animate({
             opacity: 0
         }, 300, function(){
@@ -129,12 +133,18 @@ $(document).ready(function() {
         var $sectionId = $("#n"+sectionNumber);
         $sectionId.addClass('step-current');
         $sectionId.closest('.progress-meter-section').find('.step-number').addClass('step-current');
+        $sectionId.closest('.progress-meter-section').find('.step-number').removeClass('display-none');
+        $sectionId.closest('.progress-meter-section').find('.check-symbol').addClass('display-none');
         // $sectionId.closest('.progress-meter-section').nextAll().find('.progress-label p.step-number').addClass('step-current');
+        $('.progress-label img').addClass('display-none');
         $sectionId.siblings('img').removeClass('display-none').addClass('icon-active');
         $sectionId.closest('.progress-meter-section').prevAll().find('.progress-label p.step-current').removeClass('step-current').addClass('step-complete');
         $sectionId.closest('.progress-meter-section').prevAll().find('.progress-label p.check-symbol').removeClass('display-none');
-        $sectionId.closest('.progress-meter-section').prevAll().find('.progress-label img').addClass('display-none');
+        // $sectionId.closest('.progress-meter-section').prevAll().find('.progress-label img').addClass('display-none');
         $sectionId.closest('.progress-meter-section').prevAll().find('.progress-label p.step-number').addClass('display-none');
+        $sectionId.closest('.progress-meter-section').nextAll().find('.progress-label p').removeClass('step-current');
+        $sectionId.closest('.progress-meter-section').nextAll().find('.progress-label p').removeClass('step-complete');
+        
     };
     function gotoFinal() {
         var $finalSectionPrevAll = $('#final-section').prevAll();
