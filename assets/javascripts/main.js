@@ -1,4 +1,42 @@
 $(document).ready(function() {
+    var sectionQuestionAmount = [13, 10, 9, 9, 12, 10];
+    function getSectionQuestionNumber (currentNumber) {
+        var questionNumber;
+        var section12QuestionAmount = sectionQuestionAmount[0] + sectionQuestionAmount[1]; //23
+        var section13QuestionAmount = section12QuestionAmount + sectionQuestionAmount[2];  //32
+        var section14QuestionAmount = section13QuestionAmount + sectionQuestionAmount[3];  //41
+        var section15QuestionAmount = section14QuestionAmount + sectionQuestionAmount[4];  //53
+        var section16QuestionAmount = section15QuestionAmount + sectionQuestionAmount[5];  //63
+        if (currentNumber <= 13) 
+        {
+            return (currentNumber + '/' + sectionQuestionAmount[0]);
+        }
+        else if (currentNumber > sectionQuestionAmount[0] && currentNumber <= section12QuestionAmount)
+        {
+            questionNumber = currentNumber-sectionQuestionAmount[0];
+            return (questionNumber + '/' + sectionQuestionAmount[1]);
+        }
+        else if (currentNumber > section12QuestionAmount && currentNumber <= section13QuestionAmount)
+        {
+            questionNumber = currentNumber-section12QuestionAmount;
+            return (questionNumber + '/' + sectionQuestionAmount[2]);
+        }
+        else if (currentNumber > section13QuestionAmount && currentNumber <= section14QuestionAmount)
+        {
+            questionNumber = currentNumber-section13QuestionAmount;
+            return (questionNumber + '/' + sectionQuestionAmount[3]);
+        }
+        else if (currentNumber > section14QuestionAmount && currentNumber <= section15QuestionAmount)
+        {
+            questionNumber = currentNumber-section14QuestionAmount;
+            return (questionNumber + '/' + sectionQuestionAmount[4]);
+        }
+        else if (currentNumber > section15QuestionAmount)
+        {
+            questionNumber = currentNumber-section15QuestionAmount;
+            return (questionNumber + '/' + sectionQuestionAmount[5]);
+        }
+    }
     $('.button-start').mousedown(function(e) {
         $(this).css('top', '0').css('background-color', '#FFFFFF');
     });
@@ -30,6 +68,11 @@ $(document).ready(function() {
         var currentPageId = '#' + $(self).parents('.main-section').attr('id');
         var previousPageNumber = parseInt($(self).parents('.main-section').attr('id').slice(1), 10);
         var nextPageNumber = previousPageNumber + 1;
+
+        // console.log(nextPageNumber);
+        // console.log(getSectionQuestionNumber(nextPageNumber));
+
+
         if (previousPageNumber === 1) {
             $('#link-previous').css('pointer-events', 'auto').css('cursor','pointer');
             $('#link-previous p, #link-previous img').css('opacity', '1');
@@ -48,7 +91,8 @@ $(document).ready(function() {
                 }, 300);
         });
         setTimeout(function() {
-            $('.progress-question p').html('Question ' + nextPageNumber + '/63');
+            // $('.progress-question p').html('Question ' + nextPageNumber + '/63');
+            $('.progress-question p').html('Question ' + getSectionQuestionNumber(nextPageNumber));
             $('.progress-bar-main').css('width', (nextPageNumber*(100/63)) + '%');
         }, 500);
     });
@@ -74,7 +118,8 @@ $(document).ready(function() {
                     });
                 });
             setTimeout(function() {
-                $('.progress-question p').html('Question ' + nextPageNumber + '/63');
+                // $('.progress-question p').html('Question ' + nextPageNumber + '/63');
+                $('.progress-question p').html('Question ' + getSectionQuestionNumber(nextPageNumber));
                 $('.progress-bar-main').css('width', (nextPageNumber*(100/63)) + '%');
             }, 500);
         } else {
@@ -119,7 +164,8 @@ $(document).ready(function() {
                 }, 300);
 
             setTimeout(function() {
-                $('.progress-question p').html('Question ' + previousPageNumber + '/63');
+                // $('.progress-question p').html('Question ' + previousPageNumber + '/63');
+                $('.progress-question p').html('Question ' + getSectionQuestionNumber(previousPageNumber));
                 $('.progress-bar-main').css('width', (previousPageNumber*(100/63)) + '%');
             }, 500);
 
@@ -145,9 +191,9 @@ $(document).ready(function() {
         $('.step-complete').not('.check-symbol').unbind();
 
         $('.step-complete').not('.check-symbol').click(function(e) {
-            var currentPageId = '.' + $('.current-page').attr('id');
+            var currentPageId = '#' + $('.current-page').attr('id');
             var gotoSectionNumber = parseInt($(this).attr('class').slice(1));
-            debugger;
+            // debugger;
 
             if (gotoSectionNumber - 1 === 0) {
                 $('#link-previous').css('pointer-events', 'none').css('cursor','default');
@@ -172,7 +218,8 @@ $(document).ready(function() {
                     }, 300);
             });
             setTimeout(function() {
-                $('.progress-question p').html('Question ' + gotoSectionNumber + '/63');
+                // $('.progress-question p').html('Question ' + gotoSectionNumber + '/63');
+                $('.progress-question p').html('Question ' + getSectionQuestionNumber(gotoSectionNumber));
                 $('.progress-bar-main').css('width', (gotoSectionNumber*(100/63)) + '%');
             }, 500);
             
