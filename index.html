@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exosource-Questionnaire</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link type="text/css" href="assets/stylesheets/reset.css" rel="stylesheet">
@@ -14,24 +15,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous" defer></script>
     <script src="assets/javascripts/main.js" defer></script>
 </head>
+
 <body>
-
-
     <svg style="display: none;">
-        <symbol id="rate" viewBox="0 0 1600 792">
-                <path d="M485.614,322.915c0-10.791-8.829-19.62-19.62-19.62H308.705c-10.791,0-19.62,8.829-19.62,19.62
-                    c0,10.791,8.829,19.62,19.62,19.62h157.288C476.784,342.535,485.614,333.706,485.614,322.915z"/>
-                <path d="M915.295,303.295H758.007c-10.791,0-19.62,8.829-19.62,19.62c0,10.791,8.829,19.62,19.62,19.62h157.288
-                    c10.791,0,19.62-8.829,19.62-19.62C934.915,312.124,926.249,303.295,915.295,303.295z"/>
-                <path d="M612,196.528c10.791,0,19.62-8.829,19.62-19.62V19.62C631.62,8.829,622.791,0,612,0
-                    s-19.62,8.829-19.62,19.62v157.288C592.38,187.699,601.209,196.528,612,196.528z"/>
-                <path d="M715.169,239.366c5.069,0,9.974-1.962,13.898-5.723l111.344-111.344c7.685-7.685,7.685-20.111,0-27.795
+        <symbol id="rate" viewBox="0 0 1600 792" preserveAspectRatio="xMinYMax meet">
+            <path d="M485.614,322.915c0-10.791-8.829-19.62-19.62-19.62H308.705c-10.791,0-19.62,8.829-19.62,19.62
+                    c0,10.791,8.829,19.62,19.62,19.62h157.288C476.784,342.535,485.614,333.706,485.614,322.915z" />
+            <path d="M915.295,303.295H758.007c-10.791,0-19.62,8.829-19.62,19.62c0,10.791,8.829,19.62,19.62,19.62h157.288
+                    c10.791,0,19.62-8.829,19.62-19.62C934.915,312.124,926.249,303.295,915.295,303.295z" />
+            <path d="M612,196.528c10.791,0,19.62-8.829,19.62-19.62V19.62C631.62,8.829,622.791,0,612,0
+                    s-19.62,8.829-19.62,19.62v157.288C592.38,187.699,601.209,196.528,612,196.528z" />
+            <path d="M715.169,239.366c5.069,0,9.974-1.962,13.898-5.723l111.344-111.344c7.685-7.685,7.685-20.111,0-27.795
                     c-7.685-7.685-20.111-7.685-27.795,0L701.272,205.848c-7.685,7.685-7.685,20.111,0,27.795
-                    C705.196,237.404,710.264,239.366,715.169,239.366z"/>
-                <path d="M494.933,233.643c3.761,3.761,8.829,5.723,13.898,5.723c5.069,0,9.974-1.962,13.898-5.723
+                    C705.196,237.404,710.264,239.366,715.169,239.366z" />
+            <path d="M494.933,233.643c3.761,3.761,8.829,5.723,13.898,5.723c5.069,0,9.974-1.962,13.898-5.723
                     c7.685-7.685,7.685-20.111,0-27.795L411.384,94.504c-7.685-7.685-20.111-7.685-27.795,0c-7.685,7.685-7.685,20.111,0,27.795
-                    L494.933,233.643z"/>
-                <path d="M847.769,446.685c-14.879-12.753-33.681-19.784-52.811-19.784h-17.822h-64.093h-30.411v-79.298
+                    L494.933,233.643z" />
+            <path d="M847.769,446.685c-14.879-12.753-33.681-19.784-52.811-19.784h-17.822h-64.093h-30.411v-79.298
                     c0-37.932-11.282-65.564-33.681-82.078c-35.316-25.833-83.222-11.282-85.348-10.628c-8.175,2.616-13.734,10.137-13.734,18.639
                     v95.648c0,29.103-13.898,53.792-41.529,73.576c-20.928,15.042-42.347,21.909-45.126,22.727l-1.962,0.491
                     c-7.358-8.339-18.149-13.571-30.248-13.571h-74.557c-22.236,0-40.385,18.149-40.385,40.385v244.598
@@ -43,37 +43,144 @@
                     c-20.928,0-39.24-15.696-42.51-36.461c-0.164-0.818-0.327-1.635-0.491-2.289V503.911l1.145-0.327c0.327,0,0.491-0.163,0.818-0.163
                     c1.145-0.327,28.94-8.175,56.571-27.959c38.423-27.305,58.86-64.092,58.86-106.276v-79.462c10.791-1.145,25.67-0.654,36.624,7.358
                     c11.772,8.666,17.658,25.67,17.658,50.358v98.918c0,10.791,8.829,19.62,19.62,19.62h50.031h64.093h17.822
-                    c9.81,0,19.457,3.761,27.305,10.301C834.035,486.416,839.594,502.439,837.141,518.299z"/>
+                    c9.81,0,19.457,3.761,27.305,10.301C834.035,486.416,839.594,502.439,837.141,518.299z" />
         </symbol>
     </svg>
-
-
     <div class="es-header">
         <div class="home-link">
             <a href="#">VERS EXOSOURCE.COM&nbsp;&nbsp;</a>
             <a href="#"><img src="assets/images/new-window.svg" alt="vers Exosource.com" height="14"></a>
         </div>
-        <img src="assets/images/logo-exosource.png" alt="logo">
+        <img src="assets/images/logo-exosource.png" alt="logo" class="logo">
     </div>
     <div class="progress-bar-container" id="js-progress-bar-container">
-        <div class="progress-question"><p>Question 1/63</p></div>
+        <div class="progress-question">
+            <p>Question 1/63</p>
+        </div>
         <div class="progress-nav">
             <div class="progress-nav-previous">
-                <a href="#" id='link-previous' page-number="1"><img src="assets/images/back.svg" width="22" alt="previous"><p>Précédent</p></a>
+                <a href="#" id='link-previous' page-number="1"><img src="assets/images/back.svg" width="22" alt="previous">
+                    <p>Précédent</p>
+                </a>
             </div>
             <div class="progress-bar-background">
                 <div class="progress-bar-main"></div>
             </div>
             <div class="progress-nav-next">
-                <a href="#" id='link-next' page-number="1"><p>Suivant</p><img src="assets/images/next-arrow.svg" width="22" alt="next"></a>
+                <a href="#" id='link-next' page-number="1">
+                    <p>Suivant</p><img src="assets/images/next-arrow.svg" width="22" alt="next"></a>
             </div>
         </div>
     </div>
-    
+            <a href="#" class="section-nav">Nav</a>
+        <div class="menu-small">
+            <div class="progress-meter less-768">
+                <div class="progress-meter-top-section">
+                    <div class="top-line">
+                        <div class="start-label">
+                            <p class="start-finish-label">Accueil</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-meter-section">
+                    <div class="left-line">
+                        <div class="progress-label">
+                            <p class="n1">Sécurité</p>
+                            <img class="display-none" src="assets/images/icon-active.png" alt="current step">
+                        </div>
+                    </div>
+                    <div class="right-line">
+                        <div class="progress-label progress-label-number">
+                            <p class="display-none step-complete check-symbol">&#10004;</p>
+                            <p class="step-number">1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-meter-section">
+                    <div class="left-line">
+                        <div class="progress-label label-two-line">
+                            <p class="n14">Disponibilité et continuité</p>
+                            <img class="display-none" src="assets/images/icon-active.png" alt="current step">
+                        </div>
+                    </div>
+                    <div class="right-line">
+                        <div class="progress-label progress-label-number">
+                            <p class="display-none step-complete check-symbol">&#10004;</p>
+                            <p class="step-number">2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-meter-section">
+                    <div class="left-line">
+                        <div class="progress-label">
+                            <p class="n24">Mobilité</p>
+                            <img class="display-none" src="assets/images/icon-active.png" alt="current step">
+                        </div>
+                    </div>
+                    <div class="right-line">
+                        <div class="progress-label progress-label-number">
+                            <p class="display-none step-complete check-symbol">&#10004;</p>
+                            <p class="step-number">3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-meter-section">
+                    <div class="left-line">
+                        <div class="progress-label">
+                            <p class="n33">Collaboration</p>
+                            <img class="display-none" src="assets/images/icon-active.png" alt="current step">
+                        </div>
+                    </div>
+                    <div class="right-line">
+                        <div class="progress-label progress-label-number">
+                            <p class="display-none step-complete check-symbol">&#10004;</p>
+                            <p class="step-number">4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-meter-section">
+                    <div class="left-line">
+                        <div class="progress-label label-two-line">
+                            <p class="n42">Productivité individuelle</p>
+                            <img class="display-none" src="assets/images/icon-active.png" alt="current step">
+                        </div>
+                    </div>
+                    <div class="right-line">
+                        <div class="progress-label progress-label-number">
+                            <p class="display-none step-complete check-symbol">&#10004;</p>
+                            <p class="step-number">5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-meter-section">
+                    <div class="left-line">
+                        <div class="progress-label label-two-line">
+                            <p class="n54">Gestion et administration</p>
+                            <img class="display-none" src="assets/images/icon-active.png" alt="current step">
+                        </div>
+                    </div>
+                    <div class="right-line">
+                        <div class="progress-label progress-label-number">
+                            <p class="display-none step-complete check-symbol">&#10004;</p>
+                            <p class="step-number">6</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-meter-section" id="final-section">
+                    <div class="left-line">
+                        <div class="progress-label label-two-line">
+                            <p class="start-finish-label">Votre
+                                <br>rapport final</p>
+                            <img class="display-none" src="assets/images/icon-active.png" alt="current step">
+                        </div>
+                    </div>
+                    <div class="right-line"></div>
+                </div>
+            </div>
+        </div>
     <div class="main-section-wrapper">
 
         <!---------------------------page00--------------------------->
-
         <div id="p0" class="main-section">
             <div class="text-section">
                 <h1 class="text-colored">Slogan court et punché</h1>
@@ -82,8 +189,7 @@
                 <h1 class="text-white">d’introduction</h1>
             </div>
             <div class="text-section">
-                <p>Grâce à ce court questionnaire (5 à 10 minutes de votre temps, promis), vous obtiendrez un rapport détaillé des améliorations
-                    possibles pour votre entreprise.</p>
+                <p>Grâce à ce court questionnaire (5 à 10 minutes de votre temps, promis), vous obtiendrez un rapport détaillé des améliorations possibles pour votre entreprise.</p>
             </div>
             <div class="text-section">
                 <div class="button-start-wrapper">
@@ -95,24 +201,20 @@
                 </div>
             </div>
         </div>
-
         <!---------------------page01--section-1---------------------->
-
         <div id="p1" class="main-section display-none question-page section-page">
             <div class="text-section">
                 <h2 class="text-colored">Section 1: La sécurité</h2>
             </div>
             <div class="text-section">
-                <p>Capacité de l’entreprise à se protéger contre différentes menaces (virus, fraude, piratage) et à contrôler l’accès aux
-                    informations privilégiées.</p>
+                <p>Capacité de l’entreprise à se protéger contre différentes menaces (virus, fraude, piratage) et à contrôler l’accès aux informations privilégiées.</p>
             </div>
             <div class="horizontal-line"></div>
             <div class="text-section">
                 <p class="text-secondary text-colored">Indiquez le degré d’importance de cet énoncé pour votre entreprise:</p>
             </div>
             <div class="text-section">
-                <p class="text-question text-white"><span class="text-colored">Question 1.1</span> L'entreprise ou ses clients sont soumis à des règlementations particulières
-                    (Ex: Services Financiers, Industrie Pharmaceutique, Secteur public)</p>
+                <p class="text-question text-white"><span class="text-colored">Question 1.1</span> L'entreprise ou ses clients sont soumis à des règlementations particulières (Ex: Services Financiers, Industrie Pharmaceutique, Secteur public)</p>
             </div>
             <div class="text-section vote-section">
                 <div class="col-sm-15 vote-item">
@@ -151,9 +253,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page02--------------------------->
-
         <div id="p2" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">La sécurité</h2>
@@ -163,8 +263,7 @@
                 <p class="text-secondary text-colored">Indiquez le degré d’importance de cet énoncé pour votre entreprise:</p>
             </div>
             <div class="text-section">
-                <p class="text-question text-white"><span class="text-colored">Question 1.2</span> Une fuite de données confidentielles aurait des conséquences graves pour l'entreprise 
-                (Ex: Informations financières, numéros de cartes de crédit)</p>
+                <p class="text-question text-white"><span class="text-colored">Question 1.2</span> Une fuite de données confidentielles aurait des conséquences graves pour l'entreprise (Ex: Informations financières, numéros de cartes de crédit)</p>
             </div>
             <div class="text-section vote-section">
                 <div class="col-sm-15 vote-item">
@@ -203,9 +302,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page03--------------------------->
-
         <div id="p3" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">La sécurité</h2>
@@ -254,9 +351,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page04--------------------------->
-
         <div id="p4" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">La sécurité</h2>
@@ -306,7 +401,6 @@
             </div>
         </div>
         <!---------------------------page05--------------------------->
-
         <div id="p5" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">La sécurité</h2>
@@ -321,13 +415,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -336,9 +430,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page06--------------------------->
-
         <div id="p6" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">La sécurité</h2>
@@ -353,13 +445,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -368,9 +460,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page07--------------------------->
-
         <div id="p7" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">La sécurité</h2>
@@ -385,13 +475,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -400,9 +490,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page08--------------------------->
-
         <div id="p8" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">La sécurité</h2>
@@ -417,13 +505,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -432,9 +520,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page09--------------------------->
-
         <div id="p9" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">La sécurité</h2>
@@ -449,13 +535,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -464,9 +550,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page10--------------------------->
-
         <div id="p10" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">La sécurité</h2>
@@ -481,13 +565,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -496,9 +580,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page11--------------------------->
-
         <div id="p11" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">La sécurité</h2>
@@ -513,13 +595,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -528,9 +610,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page12--------------------------->
-
         <div id="p12" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">La sécurité</h2>
@@ -545,13 +625,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -560,9 +640,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page13--------------------------->
-
         <div id="p13" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">La sécurité</h2>
@@ -577,13 +655,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -592,9 +670,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!----------------------page14--section-2--------------------->
-
         <div id="p14" class="main-section display-none question-page section-page">
             <div class="text-section">
                 <h2 class="text-colored">Section 2: DISPONIBILITÉ ET CONTINUITÉ</h2>
@@ -652,9 +728,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page15--------------------------->
-
         <div id="p15" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">DISPONIBILITÉ ET CONTINUITÉ</h2>
@@ -703,9 +777,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page16--------------------------->
-
         <div id="p16" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">DISPONIBILITÉ ET CONTINUITÉ</h2>
@@ -760,9 +832,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page17--------------------------->
-
         <div id="p17" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">DISPONIBILITÉ ET CONTINUITÉ</h2>
@@ -777,13 +847,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -792,9 +862,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page18--------------------------->
-
         <div id="p18" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">DISPONIBILITÉ ET CONTINUITÉ</h2>
@@ -809,13 +877,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -824,9 +892,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page19--------------------------->
-
         <div id="p19" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">DISPONIBILITÉ ET CONTINUITÉ</h2>
@@ -841,13 +907,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -856,9 +922,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page20--------------------------->
-
         <div id="p20" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">DISPONIBILITÉ ET CONTINUITÉ</h2>
@@ -873,13 +937,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -888,9 +952,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page21--------------------------->
-
         <div id="p21" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">DISPONIBILITÉ ET CONTINUITÉ</h2>
@@ -905,13 +967,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -920,9 +982,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page22--------------------------->
-
         <div id="p22" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">DISPONIBILITÉ ET CONTINUITÉ</h2>
@@ -937,13 +997,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -952,9 +1012,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page23--------------------------->
-
         <div id="p23" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">DISPONIBILITÉ ET CONTINUITÉ</h2>
@@ -969,13 +1027,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -984,9 +1042,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------page24--section-3---------------------->
-
         <div id="p24" class="main-section display-none question-page section-page">
             <div class="text-section">
                 <h2 class="text-colored">Section 3: MOBILITÉ</h2>
@@ -1038,9 +1094,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page25--------------------------->
-
         <div id="p25" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">MOBILITÉ</h2>
@@ -1089,9 +1143,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page26--------------------------->
-
         <div id="p26" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">MOBILITÉ</h2>
@@ -1140,9 +1192,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page27--------------------------->
-
         <div id="p27" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">Mobilité</h2>
@@ -1157,13 +1207,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -1172,9 +1222,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page28--------------------------->
-
         <div id="p28" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">Mobilité</h2>
@@ -1189,13 +1237,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -1204,9 +1252,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page29--------------------------->
-
         <div id="p29" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">Mobilité</h2>
@@ -1221,13 +1267,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -1236,9 +1282,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page30--------------------------->
-
         <div id="p30" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">Mobilité</h2>
@@ -1253,13 +1297,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -1268,9 +1312,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page31--------------------------->
-
         <div id="p31" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">Mobilité</h2>
@@ -1285,13 +1327,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -1300,9 +1342,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page32--------------------------->
-
         <div id="p32" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">Mobilité</h2>
@@ -1317,13 +1357,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -1332,9 +1372,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------page33---section-4--------------------->
-
         <div id="p33" class="main-section display-none question-page section-page">
             <div class="text-section">
                 <h2 class="text-colored">Section 4: COLLABORATION</h2>
@@ -1386,9 +1424,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page34--------------------------->
-
         <div id="p34" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">COLLABORATION</h2>
@@ -1437,9 +1473,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page35--------------------------->
-
         <div id="p35" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">COLLABORATION</h2>
@@ -1488,9 +1522,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page36--------------------------->
-
         <div id="p36" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">COLLABORATION</h2>
@@ -1539,9 +1571,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-        
         <!---------------------------page37--------------------------->
-
         <div id="p37" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">COLLABORATION</h2>
@@ -1556,13 +1586,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -1571,9 +1601,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page38--------------------------->
-
         <div id="p38" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">COLLABORATION</h2>
@@ -1588,13 +1616,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -1603,9 +1631,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page39--------------------------->
-
         <div id="p39" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">COLLABORATION</h2>
@@ -1620,13 +1646,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -1635,9 +1661,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page40--------------------------->
-
         <div id="p40" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">COLLABORATION</h2>
@@ -1652,13 +1676,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -1667,9 +1691,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page41--------------------------->
-
         <div id="p41" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">COLLABORATION</h2>
@@ -1684,13 +1706,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -1699,9 +1721,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------page42-section-5----------------------->
-
         <div id="p42" class="main-section display-none question-page section-page">
             <div class="text-section">
                 <h2 class="text-colored">Section 5: PRODUCTIVITÉ INDIVIDUELLE</h2>
@@ -1753,9 +1773,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page43--------------------------->
-
         <div id="p43" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">PRODUCTIVITÉ INDIVIDUELLE</h2>
@@ -1804,9 +1822,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page44--------------------------->
-
         <div id="p44" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">PRODUCTIVITÉ INDIVIDUELLE</h2>
@@ -1855,9 +1871,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page45--------------------------->
-
         <div id="p45" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">PRODUCTIVITÉ INDIVIDUELLE</h2>
@@ -1906,9 +1920,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page46--------------------------->
-
         <div id="p46" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">PRODUCTIVITÉ INDIVIDUELLE</h2>
@@ -1957,9 +1969,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page47--------------------------->
-
         <div id="p47" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">PRODUCTIVITÉ INDIVIDUELLE</h2>
@@ -1974,13 +1984,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -1989,9 +1999,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page48--------------------------->
-
         <div id="p48" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">PRODUCTIVITÉ INDIVIDUELLE</h2>
@@ -2006,13 +2014,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -2021,9 +2029,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page49--------------------------->
-
         <div id="p49" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">PRODUCTIVITÉ INDIVIDUELLE</h2>
@@ -2038,13 +2044,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -2053,9 +2059,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page50--------------------------->
-
         <div id="p50" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">PRODUCTIVITÉ INDIVIDUELLE</h2>
@@ -2070,13 +2074,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -2085,9 +2089,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page51--------------------------->
-
         <div id="p51" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">PRODUCTIVITÉ INDIVIDUELLE</h2>
@@ -2102,13 +2104,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -2117,9 +2119,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page52--------------------------->
-
         <div id="p52" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">PRODUCTIVITÉ INDIVIDUELLE</h2>
@@ -2134,13 +2134,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -2149,9 +2149,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page53--------------------------->
-
         <div id="p53" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">PRODUCTIVITÉ INDIVIDUELLE</h2>
@@ -2166,13 +2164,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -2181,9 +2179,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------page54-section-6----------------------->
-
         <div id="p54" class="main-section display-none question-page section-page">
             <div class="text-section">
                 <h2 class="text-colored">Section 6: GESTION ET ADMINISTRATION</h2>
@@ -2235,9 +2231,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page55--------------------------->
-
         <div id="p55" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">GESTION ET ADMINISTRATION</h2>
@@ -2286,9 +2280,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page56--------------------------->
-
         <div id="p56" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">GESTION ET ADMINISTRATION</h2>
@@ -2337,9 +2329,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page57--------------------------->
-
         <div id="p57" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">GESTION ET ADMINISTRATION</h2>
@@ -2388,9 +2378,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page58--------------------------->
-
         <div id="p58" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">Gestion et administration</h2>
@@ -2405,13 +2393,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -2420,9 +2408,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page59--------------------------->
-
         <div id="p59" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">Gestion et administration</h2>
@@ -2437,13 +2423,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -2452,9 +2438,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page60--------------------------->
-
         <div id="p60" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">Gestion et administration</h2>
@@ -2469,13 +2453,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -2484,9 +2468,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page61--------------------------->
-
         <div id="p61" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">Gestion et administration</h2>
@@ -2501,13 +2483,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -2516,9 +2498,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page62--------------------------->
-
         <div id="p62" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">Gestion et administration</h2>
@@ -2533,13 +2513,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -2548,9 +2528,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page63--------------------------->
-
         <div id="p63" class="main-section display-none question-page">
             <div class="text-section">
                 <h2 class="text-gray">Gestion et administration</h2>
@@ -2565,13 +2543,13 @@
                 </p>
             </div>
             <div class="text-section">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">VRAI</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">FAUX</button>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-4">
                     <button class="button-choose">NE SAIT PAS</button>
                 </div>
             </div>
@@ -2580,9 +2558,7 @@
                 <p>Répondez à cette question avant de continuer!</p>
             </div>
         </div>
-
         <!---------------------------page64--------------------------->
-
         <div id="p64" class="main-section display-none final-report">
             <div id="loading-center">
                 <div id="loading-center-absolute">
@@ -2605,19 +2581,18 @@
             </div>
         </div>
     </div>
-
-    <div class="progress-meter">
+    <div class="progress-meter more-768">
         <div class="progress-meter-top-section">
             <div class="top-line">
                 <div class="start-label">
                     <p class="start-finish-label">Accueil</p>
-                </div>  
+                </div>
             </div>
         </div>
         <div class="progress-meter-section">
             <div class="left-line">
                 <div class="progress-label">
-                    <p id="n1">Sécurité</p>
+                    <p class="n1">Sécurité</p>
                     <img class="display-none" src="assets/images/icon-active.png" alt="current step">
                 </div>
             </div>
@@ -2631,7 +2606,7 @@
         <div class="progress-meter-section">
             <div class="left-line">
                 <div class="progress-label label-two-line">
-                    <p id="n14">Disponibilité et continuité</p>
+                    <p class="n14">Disponibilité et continuité</p>
                     <img class="display-none" src="assets/images/icon-active.png" alt="current step">
                 </div>
             </div>
@@ -2645,7 +2620,7 @@
         <div class="progress-meter-section">
             <div class="left-line">
                 <div class="progress-label">
-                    <p id="n24">Mobilité</p>
+                    <p class="n24">Mobilité</p>
                     <img class="display-none" src="assets/images/icon-active.png" alt="current step">
                 </div>
             </div>
@@ -2659,7 +2634,7 @@
         <div class="progress-meter-section">
             <div class="left-line">
                 <div class="progress-label">
-                    <p id="n33">Collaboration</p>
+                    <p class="n33">Collaboration</p>
                     <img class="display-none" src="assets/images/icon-active.png" alt="current step">
                 </div>
             </div>
@@ -2673,7 +2648,7 @@
         <div class="progress-meter-section">
             <div class="left-line">
                 <div class="progress-label label-two-line">
-                    <p id="n42">Productivité individuelle</p>
+                    <p class="n42">Productivité individuelle</p>
                     <img class="display-none" src="assets/images/icon-active.png" alt="current step">
                 </div>
             </div>
@@ -2687,7 +2662,7 @@
         <div class="progress-meter-section">
             <div class="left-line">
                 <div class="progress-label label-two-line">
-                    <p id="n54">Gestion et administration</p>
+                    <p class="n54">Gestion et administration</p>
                     <img class="display-none" src="assets/images/icon-active.png" alt="current step">
                 </div>
             </div>
@@ -2701,7 +2676,8 @@
         <div class="progress-meter-section" id="final-section">
             <div class="left-line">
                 <div class="progress-label label-two-line">
-                    <p  class="start-finish-label">Votre <br>rapport final</p>
+                    <p class="start-finish-label">Votre
+                        <br>rapport final</p>
                     <img class="display-none" src="assets/images/icon-active.png" alt="current step">
                 </div>
             </div>
@@ -2711,12 +2687,9 @@
     <div class="es-footer navbar-fixed-bottom">
         <p class="text-center">4000 Saint-Ambroise, Suite 388, Montréal (Qc), 4C 2C7 | (514) 787.0693 | <a href="mailto:info@exosource.com">info@exosource.com</a></p>
     </div>
-
-<!--------------------------------- modal popup --------------------------------->
-
+    <!--------------------------------- modal popup --------------------------------->
     <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
-
             <!-- Modal content-->
             <div class="modal-content">
                 <!--<div class="modal-header">
@@ -2776,25 +2749,24 @@
                                     </ul>
                                 </div>
                             </div>
-                            
                             <!--<div class="form-group">
                                 <label for="pwd">Password:</label>
                                 <input type="password" class="form-control" id="pwd">
                             </div>-->
-
                             <div>
                                 <label for="radio">Confiez-vous presentement votre parc informatique en partition?</label>
                             </div>
                             <div class="radio" id="radio">
-                                <input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" /><label for="radio1" class="css-label radGroup1">Oui</label>
-                                <input type="radio" name="radiog_lite" id="radio2" class="css-checkbox" /><label for="radio2" class="css-label radGroup2">Non</label>
-                                <input type="radio" name="radiog_lite" id="radio3" class="css-checkbox" /><label for="radio3" class="css-label radGroup3">Je ne sais pas</label>
-                                
+                                <input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" />
+                                <label for="radio1" class="css-label radGroup1">Oui</label>
+                                <input type="radio" name="radiog_lite" id="radio2" class="css-checkbox" />
+                                <label for="radio2" class="css-label radGroup2">Non</label>
+                                <input type="radio" name="radiog_lite" id="radio3" class="css-checkbox" />
+                                <label for="radio3" class="css-label radGroup3">Je ne sais pas</label>
                                 <!--<label class="radio-inline css-label"><input type="radio" name="optradio" class="css-checkbox">Oui</label>
                                 <label class="radio-inline css-label"><input type="radio" name="optradio" class="css-checkbox">Non</label>
                                 <label class="radio-inline css-label"><input type="radio" name="optradio" class="css-checkbox">Je ne sais pas</label>-->
                             </div>
-                            
                             <div class="text-center">
                                 <div class="button-receive-wrapper">
                                     <div class="button-receive-color-bg">
@@ -2812,10 +2784,8 @@
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>-->
             </div>
-
         </div>
     </div>
-
-
 </body>
+
 </html>

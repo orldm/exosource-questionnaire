@@ -126,7 +126,7 @@ $(document).ready(function() {
         });
     });
     function gotoSection(sectionNumber) {
-        var $sectionId = $("#n"+sectionNumber);
+        var $sectionId = $(".n"+sectionNumber);
         $sectionId.addClass('step-current');
         $sectionId.closest('.progress-meter-section').find('.step-number').addClass('step-current');
         $sectionId.closest('.progress-meter-section').find('.step-number').removeClass('display-none');
@@ -145,8 +145,9 @@ $(document).ready(function() {
         $('.step-complete').not('.check-symbol').unbind();
 
         $('.step-complete').not('.check-symbol').click(function(e) {
-            var currentPageId = '#' + $('.current-page').attr('id');
-            var gotoSectionNumber = $(this).attr('id').slice(1);
+            var currentPageId = '.' + $('.current-page').attr('id');
+            var gotoSectionNumber = parseInt($(this).attr('class').slice(1));
+            debugger;
 
             if (gotoSectionNumber - 1 === 0) {
                 $('#link-previous').css('pointer-events', 'none').css('cursor','default');
@@ -198,6 +199,22 @@ $(document).ready(function() {
         $finalSectionPrevAll.find('.progress-label img').addClass('display-none');
         $finalSectionPrevAll.find('.progress-label p.step-number').addClass('display-none');
         $('#final-section').find('img').removeClass('display-none').addClass('icon-active');
-    }
+    };
+
+
+    $('.section-nav').click(function () {
+        var menu = $('.menu-small');
+        if ($(menu).hasClass('menu-open')) {
+            $(menu).animate({
+                right: -600
+            }, 500);
+        } else {
+            $(menu).animate({
+                right: 0
+            }, 500);
+        }
+        
+        $(menu).toggleClass('menu-open');
+    });
     
 });
