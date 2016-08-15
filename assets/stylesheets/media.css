@@ -88,6 +88,9 @@
     .start-label p.start-finish-label {
         color: #98D82A;
     }
+    .progress-label p.step-complete {
+        color: #222222;
+    }
     .main-section-wrapper {
         height: 80vh;
     }
