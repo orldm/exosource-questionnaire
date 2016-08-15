@@ -249,7 +249,7 @@ $(document).ready(function() {
     };
 
 
-    $('.section-nav').click(function () {
+    $('.section-nav, .menu-back').click(function () {
         var menu = $('.menu-small');
         if ($(menu).hasClass('menu-open')) {
             $(menu).animate({
@@ -261,6 +261,7 @@ $(document).ready(function() {
             }, 500);
         }
         
+        $('.menu-back').fadeToggle();
         $(menu).toggleClass('menu-open');
     });
     

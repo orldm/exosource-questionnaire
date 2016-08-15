@@ -62,16 +62,23 @@
     .section-nav {
         position: absolute;
         display: block;
-        top: 24px;
+        top: 7px;
         left: 10px;
         text-decoration: none;
-        color: #98D82A;
         z-index: 2;
+        width: 30px;
     }
     .section-nav:hover,
     .section-nav:focus {
-        color: #98D82A;
         text-decoration: none;
+    }
+    .section-nav span {
+        display: block;
+        width: 100%;
+        height: 5px;
+        margin: 10px 0;
+        border-radius: 3px; 
+        background-color: #98D82A;
     }
     .menu-small {
         display: block;
@@ -101,6 +108,13 @@
         width: 50px;
         height: 40px;
     }
+    .vote-section span {
+        top: 50px;
+        /*left: 52%;*/
+    }
+    .error-section {
+        padding: 20px 8px 0;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -129,6 +143,9 @@
     .main-section {
         width: 80%;
     }
+    .es-footer {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 415px) {
@@ -146,8 +163,8 @@
     .progress-nav-next p {
         display: none;
     }
-    .section-nav {
-        top: 16px;
+    .section-nav span {
+        margin: 5px 0;
     }
     .menu-small {
         top: 48px;
@@ -156,14 +173,14 @@
         width: 95%;
     }
     h2 {
-        font-size: 1rem;
-        line-height: 1rem;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
     }
     #p0 .text-section {
         padding: 8px;
     }
     .text-section {
-        padding: 0;
+        padding: 2px;
     }
     .main-section p,
     .main-section p.text-secondary,
@@ -172,27 +189,42 @@
         font-size: 0.9rem;
     }
     .vote-section {
+        height: 80px;
         width: 105%;
+        margin-top: 10px;
     }
     .vote-section span {
-        top: 50px;
+        top: 30px;
+        line-height: 1rem;
     }
     svg {
         width: 33px;
-        height: 30px;
+        height: 25px;
     }
 }
 
-@media screen and (max-width: 320px) and (max-height: 480px) {
+@media screen and (max-width: 320px) {
+    #p16 .vote-section span {
+        left: 60%;
+    }
     .main-section-wrapper {
-        height: 75vh;
+        height: 70vh;
+    }
+    .main-section p,
+    .main-section p.text-secondary,
+    .main-section p.text-question {
+        font-size: 0.72rem;
+        line-height: 1rem;
     }
     .vote-section {
         height: auto;
     }
     .vote-section span {
-        top: 30px;
-        line-height: 1rem;
+        font-size: 0.72rem;
+        line-height: 0.72rem;
+    }
+    .error-section {
+        padding: 28px 8px 8px;
     }
     .es-footer {
         height: auto;
